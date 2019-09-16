@@ -40,7 +40,7 @@ add_action( 'wp_enqueue_scripts', 'karavic_theme_enqueue_styles' );
 
     //  prints the credits Text in the footer
 
-     echo '<span>Remastered & Engineered By : </span><a href="https://karavic.com">Karavic</a>';
+     echo '<span>Remastered & Engineered By : </span><a href="https://karavic.com" target="_blank">Karavic</a>';
 
  }
 
