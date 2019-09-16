@@ -24,5 +24,43 @@ add_action( 'wp_enqueue_scripts', 'karavic_theme_enqueue_styles' );
 
  */
 
- 
+ function karavic_remove_generator()
+ {
+     # code...
+
+     return '';
+
+ }
+
+ add_filter( 'the_generator', 'karavic_remove_generator' );
+
+ function karavic_colormagchild_footer()
+ {
+     # code...
+
+    //  prints the credits Text in the footer
+
+     echo '<span>Remastered & Engineered By : </span><a href="https://karavic.com">Karavic</a>';
+
+ }
+
+
+/**
+ *Additional Admin functional features
+
+ */
+
+ function karavic_colormagchild_admin_footer()
+ {
+     # code...
+
+     echo '<span id="footer-thankyou">'.karavic_colormagchild_footer().'</span>';
+
+
+ }
+
+ add_filter( 'admin_footer_text', 'karavic_colormagchild_admin_footer' );
+
+
+
 
