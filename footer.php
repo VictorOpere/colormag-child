@@ -47,6 +47,7 @@ if ( $main_total_footer_option_layout_class == 'type_two' ) {
 				</div>
 
 				<div class="footer-socket-left-section">
+					<div style="color: #808B96; font-size: 20px;">Copyright &copy; <?php echo date("Y");?> <?php bloginfo( 'name' );?></div>
 					<?php karavic_colormagchild_footer();?>
 				</div>
 			</div>
